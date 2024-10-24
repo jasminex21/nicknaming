@@ -55,20 +55,21 @@ class TweetScraper:
                                            "user_location", 
                                            "place"])
         
-        for _, account_info in self.accounts_df.iterrows(): 
+        for i, account_info in self.accounts_df.iterrows(): 
 
             account_id = account_info["twitter_id"]
             account_tweets = await self.get_account_tweets(account_id)
-            print(f"{len(account_tweets)} tweets scraped for user {account_info["account_handle"]} ({account_id})")
+            print(f"{len(account_tweets)} tweets scraped for user {account_info['account_handle']} ({account_id})")
 
             all_tweets = pd.concat([all_tweets, account_tweets])
 
-        handle_ingroup_map = dict(zip(self.accounts_df["account_handle"], self.accounts_df["in_group"]))
-        all_tweets["in_group"] = None
-        all_tweets["in_group"] = all_tweets["account_handle"].map(handle_ingroup_map)
+        # handle_ingroup_map = dict(zip(self.accounts_df["account_handle"], self.accounts_df["in_group"]))
+        # all_tweets["in_group"] = None
+        # all_tweets["in_group"] = all_tweets["account_handle"].map(handle_ingroup_map)
 
-        all_tweets.to_csv(self.saveto_path, index=False)
-        print(f"Tweets for {self.accounts_df.shape[0]} accounts saved to {self.saveto_path}")
+            all_tweets.to_csv(self.saveto_path, index=False)
+            # print(f"{i}: Tweets for {self.accounts_df.shape[0]} accounts saved to {self.saveto_path} ({all_tweets.shape[0]})")
+            print(f"{i}: Dataset size {all_tweets.shape[0]}")
 
 
 if __name__ == "__main__":

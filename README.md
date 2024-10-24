@@ -3,7 +3,9 @@
 ### Potential Aims
 * To study the *generation* of nicknames - who is this a nickname of, and what is the probability that this nickname belongs to this player? Onomastics.
 * Classifying affectionate vs non-affectionate / derogatory nicknames - nicknames can have sentiment too, potentially depending on the circumstances.
-  * When are affectionate vs derogatory nicknames used? Plays into in-group vs out-group dynamics - does the in-group refer to players of their team in a derogatory way if that player is performing poorly?
+  * I have a clear idea of derogatory nicknames, less so of "affectionate" nicknames. Maybe instead of affectionate nicknames, I should consider non-derogatory nicknames. I'd say that a nickname like "Sonny" or "Madders" is affectionate, but at the same time, I feel like those nicknames are basically exclusively what they are referred to, regardless of performance.
+    * Is there a difference in first name vs last name usage based on situational circumstances?
+  * When are affectionate vs derogatory nicknames used? Plays into in-group vs out-group dynamics - does the in-group refer to players of their team in a derogatory way if that player is performing poorly? I feel like first name referral is more affectionate, last name only referral is less affectionate but not derogatory of course.
   * I'm very interested in the use of slander names - this is something that I personally have seen only on Twitter. Names such as *Ndombelly*, *McMuffin*, *Dohertitties*, etc. It makes sense that these are primarily used when that player is performing poorly - more specifically, they tend to be used by the in-group when their own player is performing poorly.
 
     McTominay -> *McMuffin*
